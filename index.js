@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
  res.send(respuesta);
 });
 
-app.post('https://jalejandrorangel.github.io/modelo_de_creciemiento/add', function (req, res) {
+app.post('/add', function (req, res) {
     //console.log(req.body.uno, req.body.dos);
     var suma = math.add(parseInt(req.body.uno), parseInt(req.body.dos));
     respuesta = {
